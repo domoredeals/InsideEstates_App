@@ -124,6 +124,9 @@ class CompaniesHouseImporter:
                 previous_name_10_date DATE,
                 conf_stmt_next_due_date DATE,
                 conf_stmt_last_made_up_date DATE,
+                data_source VARCHAR(50) DEFAULT 'basic_file',
+                scraped_data BOOLEAN DEFAULT FALSE,
+                last_scraped_at TIMESTAMP,
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
